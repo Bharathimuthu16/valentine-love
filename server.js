@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const boyfriendName = "My Love ❤️";
+const boyfriendName = "My Dear Love ❤️";
 const anniversaryDate = new Date("2024-06-15");
 
 function getDaysTogether() {
