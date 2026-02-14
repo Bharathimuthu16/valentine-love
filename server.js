@@ -150,8 +150,10 @@ h1 {
     <h2>My Love 💕</h2>
     <p>
     You are my safe place, my happiness, my forever.
-    Every day with you feels magical.
-    I am so lucky to call you mine ❤️
+    Every day with you feels magical..Your smile is my favorite sight in the whole world.
+    With you, even ordinary moments become magical memories.You make my heart feel calm, loved, and understood.
+    No matter where life takes us, I always want you by my side.Loving you is the easiest and most natural thing I have ever done.
+    You are not just my love, you are my best friend and my home.I am so lucky and grateful to call you mine, today and always ❤️
     </p>
 </div>
 
@@ -204,7 +206,15 @@ setInterval(() => {
 `);
 });
 
-
+app.get("/send-love", async (req, res) => {
+    try {
+        await sendLoveEmail();
+        res.send("💌 Love email sent successfully!");
+    } catch (err) {
+        console.log(err);
+        res.send("Error sending email 😢");
+    }
+});
 
 app.listen(PORT, async () => {
     console.log("💖 Valentine App Running at http://localhost:3000");
