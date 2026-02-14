@@ -3,7 +3,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const boyfriendName = "My Love ❤️";
 const anniversaryDate = new Date("2024-06-15");
