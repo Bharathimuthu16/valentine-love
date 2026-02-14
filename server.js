@@ -204,7 +204,16 @@ setInterval(() => {
 `);
 });
 
+app.get("/send-love", async (req, res) => {
+    try {
+        await sendLoveEmail();
+        res.send("💌 Love email sent successfully!");
+    } catch (err) {
+        console.log(err);
+        res.send("Error sending email 😢");
+    }
+});
+
 app.listen(PORT, async () => {
     console.log("💖 Valentine App Running at http://localhost:3000");
-    await sendLoveEmail();
 });
