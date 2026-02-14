@@ -208,5 +208,4 @@ setInterval(() => {
 
 app.listen(PORT, async () => {
     console.log("💖 Valentine App Running at http://localhost:3000");
-    await sendLoveEmail();
 });
