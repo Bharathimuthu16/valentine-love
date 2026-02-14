@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const boyfriendName = "My Dear Love ❤️";
-const anniversaryDate = new Date("2024-06-15");
+const anniversaryDate = new Date("2023-10-28");
 
 function getDaysTogether() {
     const today = new Date();
@@ -30,7 +30,7 @@ async function sendLoveEmail() {
         html: `
             <h2>Hey Love 😘</h2>
             <p>I made something special just for you...</p>
-            <a href="http://localhost:3000?password=${process.env.SECRET_PASSWORD}">
+            <a href="https://valentine-love.onrender.com?password=${process.env.SECRET_PASSWORD}">
             Click Here ❤️
             </a>
         `
