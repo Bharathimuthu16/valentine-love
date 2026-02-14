@@ -30,7 +30,7 @@ async function sendLoveEmail() {
         html: `
             <h2>Hey Love 😘</h2>
             <p>I made something special just for you...</p>
-            <a href="https://valentine-love.onrender.com?password=${process.env.SECRET_PASSWORD}">
+            <a href="https://valentine-love-sgcf.onrender.com?password=${process.env.SECRET_PASSWORD}">
             Click Here ❤️
             </a>
         `
